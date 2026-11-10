@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Penny Wish 개인정보 처리방침 · Privacy Policy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<nav><a href="#ko">한국어</a> · <a href="#en">English</a> · <a href="./">지원 · Support</a></nav>
+
+<article id="ko" lang="ko">
+<h1>Penny Wish 개인정보 처리방침</h1>
+<p class="meta">시행일: 2026년 11월 10일</p>
+
+<p>Penny Wish(이하 "앱")는 사고 싶은 물건을 사진으로 남기고 모은 금액을 기록하는 앱입니다. 앱은 회원가입이나 로그인이 없고, 기록은 기본적으로 사용자의 기기에만 저장됩니다. 앱은 사용자의 돈을 보관하거나 옮기지 않으며 은행 계좌와 연결하지 않습니다.</p>
+
+<h2>1. 기기에만 저장되는 정보</h2>
+<p>위시 이름, 목표 금액, 통화, 입금 기록, 메모, 물건 사진과 칠하기용 마스크, 앱 설정은 사용자의 기기 안에만 저장되며 개발자에게 전송되지 않습니다. 앱을 삭제하면 함께 삭제됩니다. 기기 백업(iCloud 등)에 포함될 수 있습니다.</p>
+
+<h2>2. 외부로 전송되는 정보와 목적</h2>
+<table>
+<thead><tr><th>항목</th><th>언제</th><th>목적</th><th>받는 곳</th></tr></thead>
+<tbody>
+<tr><td>물건 사진(긴 변 1600px 이하 JPEG), 사진에서 탭한 위치</td><td>사용자가 동의한 뒤 사진을 탭해 물건이나 부위를 지정할 때만</td><td>사진에서 물건·부위 영역을 찾는 AI 분할</td><td>개발자의 서버(Cloudflare Worker)를 거쳐 fal.ai</td></tr>
+<tr><td>익명 사용자 ID, AI 분할 사용 횟수</td><td>AI 분할을 요청할 때</td><td>무료·구독 이용 한도 계산</td><td>Cloudflare(개발자의 서버)</td></tr>
+<tr><td>IP 주소</td><td>AI 분할을 요청할 때</td><td>과도한 요청 차단(속도 제한)</td><td>Cloudflare. 개발자는 저장하지 않습니다</td></tr>
+<tr><td>익명 사용자 ID, 구매·구독 내역</td><td>앱 실행, 구매, 구매 복원 때</td><td>프리미엄 이용 권한 확인</td><td>RevenueCat</td></tr>
+<tr><td>광고 식별자(IDFA, 추적 허용 시에만), 기기·앱 정보, IP 주소, 광고 노출·클릭 정보</td><td>무료 사용자에게 광고를 보여줄 때</td><td>광고 제공</td><td>Google(AdMob)</td></tr>
+</tbody>
+</table>
+<p>결제는 Apple이 처리하며, 개발자는 카드 번호 등 결제 정보를 받지 않습니다. 사진을 탭하지 않으면 사진은 기기 밖으로 나가지 않습니다. 광고 추적은 iOS의 "앱 추적 투명성" 동의창에서 허용한 경우에만 하며, 거부하면 개인화되지 않은 광고가 표시됩니다.</p>
+
+<h2>3. 처리 위탁 및 국외 이전</h2>
+<p>아래 업체는 서비스 제공을 위해 정보를 처리하며, 모두 국외(주로 미국)에 있습니다. 정보는 위 표의 시점에 인터넷(HTTPS)으로 전송됩니다.</p>
+<ul>
+<li><b>fal.ai</b> (미국): 사진과 탭 위치로 AI 분할. 개발자는 요청 기록에 입력·출력을 남기지 않도록 설정해 요청하지만, fal.ai는 자체 정책에 따라 로그 등을 일정 기간 보관할 수 있습니다.</li>
+<li><b>Cloudflare, Inc.</b> (미국 및 전 세계 데이터센터): 개발자 서버 운영. 사진은 fal.ai로 전달만 하고 저장하지 않습니다. 익명 사용자 ID와 사용 횟수는 아래 보유 기간 동안 저장합니다.</li>
+<li><b>RevenueCat, Inc.</b> (미국): 구독·구매 상태 관리. RevenueCat의 정책에 따라 보관합니다.</li>
+<li><b>Google LLC</b> (미국): AdMob 광고 제공. Google의 정책에 따라 보관합니다.</li>
+</ul>
+<p>국외 이전을 원하지 않으면 사진을 탭하지 않고(AI 분할 미사용) 앱을 이용할 수 있습니다. 광고 추적은 iOS 설정에서 끌 수 있습니다.</p>
+
+<h2>4. 보유 기간과 파기</h2>
+<ul>
+<li>기기에 저장된 정보: 사용자가 위시를 삭제하거나 앱을 삭제할 때까지.</li>
+<li>개발자 서버의 익명 사용자 ID와 사용 횟수: 서비스 종료 시 또는 삭제 요청 시까지. 구독자의 월별 사용 횟수는 해당 월 집계 용도로만 씁니다.</li>
+<li>파기는 데이터베이스에서 지우는 방식으로 합니다.</li>
+</ul>
+
+<h2>5. 이용자의 권리</h2>
+<p>앱은 이름, 이메일, 전화번호 같은 개인을 식별하는 정보를 받지 않습니다. 기기의 정보는 앱 안에서 직접 삭제할 수 있습니다. 개발자 서버의 정보 열람·삭제를 원하거나 궁금한 점이 있으면 아래 이메일로 문의해 주세요.</p>
+
+<h2>6. 아동</h2>
+<p>앱은 만 14세 미만 아동을 대상으로 하지 않습니다.</p>
+
+<h2>7. 개인정보 보호책임자 및 문의</h2>
+<p>김민성 (개인 개발자) · <a href="mailto:support@minsunq.com">support@minsunq.com</a></p>
+
+<h2>8. 변경</h2>
+<p>이 방침이 바뀌면 이 페이지에 시행일과 함께 알립니다.</p>
+</article>
+
+<hr>
+
+<article id="en" lang="en">
+<h1>Penny Wish Privacy Policy</h1>
+<p class="meta">Effective: November 10, 2026</p>
+
+<p>Penny Wish (the "app") lets you photograph something you want and record the money you save toward it. There is no sign-up or login, and your records stay on your device. The app never holds or moves your money and does not connect to bank accounts.</p>
+
+<h2>1. Data that stays on your device</h2>
+<p>Wish names, goal amounts, currencies, savings records, notes, item photos and coloring masks, and settings are stored only on your device and are never sent to the developer. Deleting the app deletes them. They may be included in your device backups (such as iCloud).</p>
+
+<h2>2. Data that leaves your device, and why</h2>
+<table>
+<thead><tr><th>Data</th><th>When</th><th>Purpose</th><th>Recipient</th></tr></thead>
+<tbody>
+<tr><td>Item photo (JPEG, longest side up to 1600 px) and the points you tap</td><td>Only after you agree, when you tap the photo to mark the item or its parts</td><td>AI segmentation to find the item or part in the photo</td><td>fal.ai, through the developer's server (Cloudflare Worker)</td></tr>
+<tr><td>Anonymous user ID, AI usage count</td><td>When you request AI segmentation</td><td>Free and subscription usage limits</td><td>Cloudflare (developer's server)</td></tr>
+<tr><td>IP address</td><td>When you request AI segmentation</td><td>Blocking excessive requests (rate limiting)</td><td>Cloudflare. Not stored by the developer</td></tr>
+<tr><td>Anonymous user ID, purchase and subscription history</td><td>On launch, purchase and restore</td><td>Checking Premium access</td><td>RevenueCat</td></tr>
+<tr><td>Advertising ID (IDFA, only if you allow tracking), device and app info, IP address, ad impressions and clicks</td><td>When ads are shown to free users</td><td>Serving ads</td><td>Google (AdMob)</td></tr>
+</tbody>
+</table>
+<p>Payments are handled by Apple; the developer never receives your card or payment details. If you don't tap the photo, it never leaves your device. Ad tracking happens only if you allow it in the iOS App Tracking Transparency prompt; otherwise you see non-personalized ads.</p>
+
+<h2>3. Service providers and international transfer</h2>
+<p>These providers process data to run the app. All are outside Korea (mainly in the United States). Data is sent over the internet (HTTPS) at the times listed above.</p>
+<ul>
+<li><b>fal.ai</b> (United States): AI segmentation of the photo and tap points. The developer asks fal.ai not to keep inputs and outputs in its request history, but fal.ai may keep logs for a period under its own policy.</li>
+<li><b>Cloudflare, Inc.</b> (United States and global data centers): runs the developer's server. Photos are passed on to fal.ai and not stored. The anonymous user ID and usage counts are kept for the period below.</li>
+<li><b>RevenueCat, Inc.</b> (United States): subscription and purchase status, kept under RevenueCat's policy.</li>
+<li><b>Google LLC</b> (United States): AdMob ads, kept under Google's policy.</li>
+</ul>
+<p>To avoid any international transfer, use the app without tapping photos (no AI segmentation). You can turn off ad tracking in iOS Settings.</p>
+
+<h2>4. Retention and deletion</h2>
+<ul>
+<li>On-device data: until you delete the wish or the app.</li>
+<li>Anonymous user ID and usage counts on the developer's server: until the service ends or you ask for deletion. Subscribers' monthly counts are used only for that month's limit.</li>
+<li>Deletion means removing the records from the database.</li>
+</ul>
+
+<h2>5. Your rights</h2>
+<p>The app does not collect your name, email, phone number or other identifying details. You can delete on-device data inside the app. To access or delete data on the developer's server, or for any question, email the address below.</p>
+
+<h2>6. Children</h2>
+<p>The app is not directed at children under 14.</p>
+
+<h2>7. Contact</h2>
+<p>Minsung Kim (individual developer) · <a href="mailto:support@minsunq.com">support@minsunq.com</a></p>
+
+<h2>8. Changes</h2>
+<p>If this policy changes, the new version and its effective date will be posted on this page.</p>
+</article>
+</main>
+</body>
+</html>
